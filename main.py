@@ -89,9 +89,8 @@ def main():
     model = build_model(len(train_x[0]), len(train_y[0]))
     model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
 
-    model.save('chatbot_model.keras')
+    model.save('MountieBot_model.keras')
 
 
 if __name__ == "__main__":
     main()
-

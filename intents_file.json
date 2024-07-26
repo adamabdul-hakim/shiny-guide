@@ -1,0 +1,66 @@
+{
+  "intents": [
+    {
+      "tag": "welcome",
+      "patterns": ["Hello", "Hi", "Hey", "Hello there", "Hey there", "Hi there!", "Good morning", "Good afternoon", "Good evening", "Howdy", "Greetings", "Hiya", "Hi MountaineerBot", "What's up?", "Yo"],
+      "responses": ["Hello, I'm MountieBot. Feel free to ask me any questions about Berea College!", "Hey, it's good to see you. How may I help you?", "Hi there, what can I do for you?", "Hello! I'm here to help. Ask me any question about Berea College.", "Hello! Let me know how I can help!"],
+      "context_set": "greetings"
+    },
+    {
+      "tag": "greetings-response",
+      "patterns": ["I'm doing great!", "I'm fine", "Thanks for asking. I'm fine", "Good. How about you?", "Good"],
+      "responses": ["Nice to hear. Do you want to know anything about Berea College?", "That's awesome. How can I help you?"],
+      "context_filter": "greetings"
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That was helpful","Thank you for providing the valuable information", "Awesome, thanks for helping"],
+      "responses": ["Happy to help you", "I am glad that helped!", "It's my pleasure to help you", "Feel free to reach out in case you have more questions."]
+    },
+    {
+      "tag": "no_answer",
+      "patterns": [""],
+      "responses": ["Sorry, Could you repeat that?", "What was that?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye bye", "Nice to chat with you", "Bye", "See you later buddy", "Goodbye"],
+      "responses": ["Bye bye, thanks for reaching out.", "Have a nice day!", "See you later!"]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["How do I apply to Berea College?", "Tell me about the admission process", "What are the admission requirements?", "How can I get admitted to Berea College?"],
+      "responses": ["You can apply to Berea College through our official website. You'll need to provide your transcripts, recommendation letters, and complete an application form.", "Admission to Berea College requires submitting an application form, your academic records, and recommendation letters. Visit our website for more details."]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["What courses are offered at Berea College?", "Tell me about the courses available", "What programs can I study?", "List the courses at Berea College"],
+      "responses": ["Berea College offers a wide range of courses including Arts, Sciences, Engineering, Business, and more. Visit our course catalog on the website for detailed information.", "We have diverse programs in various fields such as Humanities, Social Sciences, Natural Sciences, and Professional Studies."]
+    },
+    {
+      "tag": "tuition",
+      "patterns": ["How much is the tuition fee?", "Tell me about the cost of tuition", "What are the tuition fees at Berea College?", "How expensive is Berea College?"],
+      "responses": ["Berea College offers a Tuition Promise Scholarship that covers 100% of tuition costs. Students only need to cover housing, meals, and other fees.", "Thanks to the Tuition Promise Scholarship, students at Berea College do not pay for tuition. Other costs like housing and meals are separate."]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": ["Are there any scholarships available?", "Tell me about scholarships at Berea College", "How can I get a scholarship?", "What financial aid is available?"],
+      "responses": ["Berea College provides the Tuition Promise Scholarship to all admitted students, covering 100% of tuition. Additional scholarships and financial aid are also available based on need and merit.", "All students receive the Tuition Promise Scholarship, and there are other financial aids and scholarships available based on specific criteria."]
+    },
+    {
+      "tag": "campus_life",
+      "patterns": ["What is campus life like?", "Tell me about student life at Berea College", "What activities are available on campus?", "Describe the campus experience"],
+      "responses": ["Campus life at Berea College is vibrant with various clubs, organizations, and activities. Students can participate in sports, arts, and community service projects.", "Berea College offers a rich campus experience with numerous extracurricular activities, student organizations, and community engagement opportunities."]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is Berea College located?", "Tell me the location of Berea College", "What is the address of Berea College?", "How can I find Berea College?"],
+      "responses": ["Berea College is located in Berea, Kentucky, USA. The address is 101 Chestnut St, Berea, KY 40403.", "You can find Berea College in Berea, Kentucky. The campus is situated at 101 Chestnut St, Berea, KY 40403."]
+    },
+    {
+      "tag": "history",
+      "patterns": ["Tell me about the history of Berea College", "When was Berea College founded?", "What is the background of Berea College?", "Share some historical information about Berea College"],
+      "responses": ["Berea College was founded in 1855 and is known for its commitment to interracial education and social justice. It was the first integrated coeducational college in the South.", "Founded in 1855, Berea College has a rich history of promoting equality and providing free education to students from low-income backgrounds."]
+    }
+  ]
+}
